@@ -1,11 +1,8 @@
 name: CI
 
 on:
-  # Runs on Every Push
   push:
-  # Runs on Pull Requests
-  pull_request:
-  workflow_dispatch:
+    - main
 
 jobs:
   download_caravel:
