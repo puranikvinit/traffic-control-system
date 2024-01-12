@@ -1,14 +1,11 @@
-# Caravel User Project
+# Smart Traffic Control System
+In this project, image processing techniques are used to control traffic congestions by dynamically allocating release time for the vechicles depinding upon the density of the vechicles on the roads.
+The proposed work uses Sobel edge detection filter and density calculation algorithms.
+The project is based on the Caravel template provided by efabless.
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
-
-| :exclamation: Important Note            |
-|-----------------------------------------|
-
-## Please fill in your project documentation in this README.md file 
-
-Refer to [README](docs/source/index.rst#section-quickstart) for a quickstart of how to use caravel_user_project
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
-
-Refer to the following [readthedocs](https://caravel-sim-infrastructure.readthedocs.io/en/latest/index.html) for how to add cocotb tests to your project. 
+## Specifications
+- 2*8 bit inputs for RGB images
+- Supports 32*32 bytes image resolution
+- Kernel size of 3*3 bytes
+- Uses SKYWATER130 PDK
+- Generates 2bit output indicating which of the lights must turn on after the processing
